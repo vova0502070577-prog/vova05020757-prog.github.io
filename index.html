@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПартнерСтрой — комплектация строительных объектов</title>
+
+    <!-- Подключение шрифта Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Иконки Font Awesome (для карточек) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Иконка сайта (favicon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>">
+
+    <!-- Мета-теги для соцсетей -->
+    <meta property="og:title" content="ПартнерСтрой — комплектация строительных объектов">
+    <meta property="og:description" content="Снизим стоимость закупки до 20%. Подбор за 1 час. Комплексное снабжение строительных объектов.">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f7f8fa;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin: 15px 0 25px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 26px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-orange {
+            background: #ff6b00;
+            color: white;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* CARDS */
+        .block {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .card i {
+            font-size: 1.2em;
+        }
+
+        .card:nth-child(odd) { background:#e8f0fe; }
+        .card:nth-child(even) { background:#fefae0; }
+
+        .card:nth-child(odd):hover { background:#d6e4ff; transform: translateY(-5px); }
+        .card:nth-child(even):hover { background:#fdf4d9; transform: translateY(-5px); }
+
+        /* CTA */
+        .cta {
+            background: #ff6b00;
+            color: white;
+            text-align: center;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .phone {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 15px;
+          display: block;
+      }
+
+      /* Адаптивность */
+      @media (max-width: 768px) {
+          h1 { font-size: 28px; }
+          .subtitle { font-size: 16px; margin-bottom: 15px; }
+          header { padding: 30px 15px; }
+          .btn { padding: 12px 24px; font-size: 14px; }
+      }
+    </style>
+</head>
+<body>
+
+<header>
+<h1>Комплектация строительных объектов под ключ</h1>
+    <div class="subtitle">Снизим стоимость закупки до 20% • Професионально экономим ваши деньги и время</div>
+
+    <a href="tel:+79829710504" class="btn btn-orange">📞 Позвонить</a>
+    <a href="https://wa.me/79829710504" class="btn btn-outline">💬 telegam</a>
+</header>
+
+<div class="container">
+
+<div class="block">
+    <h2>О компании ПартнерСтрой</h2>
+    <p>Комплексно снабжаем строительные объекты от черновых материалов до финишной отделки. Работаем с бригадами, застройщиками и магазинами.</p>
+</div>
+
+<div class="block">
+    <h2>Что поставляем</h2>
+    <div class="grid">
+      <div class="card"><i class="fas fa-cubes"></i> Сухие смеси и цемент</div>
+      <div class="card"><i class="fas fa-tile"></i> Плитка и керамогранит</div>
+      <div class="card"><i class="fas fa-shower"></i> Сантехника</div>
+      <div class="card"><i class="fas fa-bolt"></i> Электрика</div>
+      <div class="card"><i class="fas fa-roof"></i> Кровля и фасады</div>
+      <div class="card"><i class="fas fa-toolbox"></i> Расходники для бригад</div>
+    </div>
+</div>
+
+<div class="block">
+    <h2>Почему выбирают нас</h2>
+    <div class="grid">
+      <div class="card"><i class="fas fa-truck"></i> Прямые поставки от производителей</div>
+      <div class="card"><i class="fas fa-dollar-sign"></i> Оптовые цены</div>
+      <div class="card"><i class="fas fa-shipping-fast"></i> Быстрая доставка</div>
+      <div class="card"><i class="fas fa-clipboard-check"></i> Комплектация под ключ</div>
+    </div>
+</div>
+
+<div class="block cta">
+    <h2>Получите расчет в течении рабочего дня </h2>
+    <p>Подберем материалы под ваш объект и бюджет</p>
+    <a href="https://wa.me/79829710504" class="btn btn-outline">Получить расчет</a>
+</div>
+
+<div class="block">
+    <h2>Контакты</h2>
+    <p><b>ПартнерСтрой</b></p>
+    <p class="phone">8 (982) 971-05-04</p>
+    <a href="https://wa.me/79829710504" class="btn btn-orange">Написать в WhatsApp</a>
+</div>
+
+</div>
+
+<footer>
+    © 2026 ПартнерСтрой
+</footer>
+
+</body>
+</html>
